@@ -1,5 +1,6 @@
 const { nanoid } = require('nanoid');
-const notes = require('./notes');
+const notes = require('./__notes');
+
 const addNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload;
   const id = nanoid(16);
